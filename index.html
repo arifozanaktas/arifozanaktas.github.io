@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özgeçmişinizi oluşturun</title>
+    <link rel="stylesheet" href="alert.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <button class="edit-button" onclick="toggleHalfDiv()">Düzenle</button>
+
+
+    <div class="container">
+        <div class="avatar">
+            <img  id="pp" src="./Project/Resume/profil.jpeg" alt="">
+        </div>
+        <div class="name">
+            <h1 id="name2">name</h1>
+            <h1 id="surname2">surname</h1>
+            <div class="specialize">Özgeçmiş</div>
+            <ul class="contact">
+                <li >
+                    <span><i class="fa fa-phone"></i></span> <h8 id="phoneNumber2">asfas</h8>
+                </li>
+                <li >
+                    <span><i class="fa fa-envelope"></i></span><h8 id="email2">asfas</h8>
+                </li>
+                <li>
+                    <span><i class="fa fa-location-dot"></i></span> <h8 id="adress2">asfas</h8>
+                </li>
+            </ul>
+        </div>
+        <div class="experience">
+            <h2 class="skills" >
+                Yabancı Dil Bilgisi
+            </h2>
+            <ul id="languages2">
+                <li>İngilizce</li>
+                <progress id="file" style="color:black" value="${skill.rate}" max="100"> ${skill.rate}% </progress>
+            </ul>
+        </div>
+        <div class="intro">
+            <h2>Hakkımda</h2>
+            <p  id="about2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eligendi omnis quasi dolores modi eius aliquam
+            ipsum soluta, dolore tenetur excepturi praesentium porro alias itaque enim labore qui necessitatibus
+            molestias hic cum deserunt ab! Illum sed eveniet distinctio, alias sunt repudiandae labore a dolorum
+            tenetur? Harum deleniti mollitia odio neque.</p>
+
+
+        </div>
+
+        <div class="experience">
+            <h2>İş Bilgileri</h2>
+
+            <div class="item">
+                <span id="jobs2"><h4>company</h4>
+                <div class="time">
+                    <span id="startingDate">2020</span>-<span id="endingDate">2020</span>
+                    <span id="position2">position</span>
+                </span>
+                    <h2 class="skills">
+                        Yetenekler
+                    </h2>
+                    <ul id="skills2">
+                        <li>HTML</li>
+                        <progress id="file" style="color:black" value="${skill.rate}" max="100"> ${skill.rate}% </progress>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+
+            <div class="project">
+                <div id="educationsInfo" class="item">
+                    <h4>Eğitim Bilgisi</h4>
+                    <div class="time">
+                        <span id="startingDate1">2020</span>-<span id="endingDate1">2020</span>
+                        <span id="university2">University</span>
+                        <span id="lesson2">bölüm</span>
+                    </div>
+                </div>
+                    <h2>PROJECTS</h2>
+                    <div id="projects2" class="item">
+                        <h4 id="projectName">Website shopping</h4>
+                        <div class="des"> <h8 id="projectdesc">     
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur amet sed, est eum
+                            facilis repellendus
+                            atque perspiciatis iste porro nobis autem explicabo expedita fugiat nostrum. Eveniet eum
+                            autem culpa!
+                        </h8>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="half">
+            <div class="info">
+                <h1 id="smallTitle">Kişisel Bilgiler</h1>
+                <div class="imageUpdate">
+                    <h4>Fotoğraf Yükleme</h4>
+                    <form action="upload.php" method="POST" enctype="multipart/form-data">
+                        <input type="file" name="photo" accept="image/*">
+                        <input type="submit" value="Yükle">
+                </div>
+                <div class="aboutMe">
+                    <label for="aboutMe">Hakkımda<input type="text" id="aboutMe" placeholder="Hakkımda" required></label>
+                </div>
+                <label for="name">İsim<input id="name" type="text" placeholder="Arif Ozan" required></label>
+                <label for="surname">Soyad <input id="surname" type="text" placeholder="Aktaş" required></label>
+                <label for="email">Email <input type="email" id="email" placeholder="arifozanaktas@hotmail.com" required></label>
+                <label for="adress">Adres<input type="text" id="adress" placeholder="Yücetepe, Akdeniz Cd. No:31"></label>
+                <label for="district">ilçe <input id="district" type="text" placeholder="Çankaya"></label>
+                <label for="province">Şehir <input id="province" type="text" placeholder="Ankara"></label>
+                <label for="phoneNumber">Telefon Numarası <input id="phoneNumber" type="text" placeholder="0535 123 12 12"></label>
+                <div class="update"><button id="update1">Güncelle</button></div>
+            </div>
+            <div class="info" id="educations">
+                <h1 id="smallTitle">Eğitim Bilgileri</h1>
+                <select name="education">
+                    <option value="Yüksek Lisans">Yüksek Lisans</option>
+                    <option value="Lisans Derecesi">Lisans Derecesi</option>
+                    <option value="Önlisans Derecesi">Önlisans Derecesi</option>
+                </select>
+                <label for="universty">Üniversite<input id="university" type="text"></label>
+                <label for="department">Bölüm<input id="department" type="text"></label>
+                <label for="startingDate">Başlangıç Tarihi<input id="startingDate" type="date" placeholder="1991-12-04" required></label>
+                <label for="endingDate">Bitiş Tarihi<input id="endingDate" type="date" placeholder="1991-12-04" ></label><br>
+                <label>
+                    <input type="checkbox" name="agree" value="Devam Ediyor">
+                    Eğitimime devam ediyorum.
+                    <div class="update"><button id="update2">Güncelle</button></div>
+                </label>
+            </div>
+            <div class="info">
+                <h1 id="smallTitle">İş Bilgileri</h1>
+                <label for="company">Şirket Adı<input id="company" type="text"></label>
+                <label for="position">Pozisyon<input id="position" type="text"></label>
+                <label for="startingDate">Başlangıç Tarihi<input id="startingDate1" type="date"  required></label>
+                <label for="endingDate">Bitiş Tarihi<input id="endingDate1" type="date"></label>
+                <label><br>
+                    <input type="checkbox" name="agree" id="load" value="Devam Ediyor">
+                    Hala devam ediyorum.
+                </label>
+                <div class="update"><button id="update3">Güncelle</button></div>
+            </div>
+            <div class="info">
+                <h1 id="smallTitle">Beceriler</h1>
+                <label for="skills">Beceriler<input id="skills" type="text"></label>
+                <select name="skills" id="skillsRange">
+                    <option value="5">Mükemmel</option>
+                    <option value="4">Çok iyi</option>
+                    <option value="3">İyi</option>
+                    <option value="2">Orta</option>
+                    <option value="1">Başlangıç</option>
+                </select>
+                <div class="update"><button id="update4">Güncelle</button></div>
+            </div>
+            <div class="info">
+                <h1 id="smallTitle">Yabancı Dil Bilgisi</h1>
+                <button class="addJob">+</button>
+                <button class="deleteJob">-</button>
+                <label for="skills">Yabancı Diller<input type="text"></label>
+                <select name="skills">
+                    <option value="5">Mükemmel</option>
+                    <option value="4">Çok iyi</option>
+                    <option value="3">İyi</option>
+                    <option value="2">Orta</option>
+                    <option value="1">Başlangıç</option>
+                </select>
+                <div class="update"><button id="update5">Güncelle</button></div>
+            </div>
+            <div class="info">
+                <h1 id="smallTitle">Projeler</h1>
+                <button class="addJob" id="addproject">+</button>
+                <button class="deleteJob" id="deleteproject">-</button>
+                <label for="projectTitle">Proje Başlığı<input type="text"></label>
+                <label for="projectInfo">Proje Açıklaması<input type="text"></label>
+                <div class="update"><button id="update6">Güncelle</button></div>
+            </div>
+        </div>
+
+        <script src="alert.js"></script>
+</body>
+
+</html>
